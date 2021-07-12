@@ -235,6 +235,10 @@
   
       upgradeFirmware: function (device_id, url, success, failure) {
           cordova.exec(success, failure, "BLE", "upgradeFirmware", [device_id, url]);
+      },
+
+      cordovaPluginLog: function(str) {
+          console.log(str);
       }
   
   };
