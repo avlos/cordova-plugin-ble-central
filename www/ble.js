@@ -250,6 +250,7 @@
       connect: module.exports.connect,
       startNotification: module.exports.startNotification,
       startStateNotifications: module.exports.startStateNotifications,
+      cordovaPluginLog: module.exports.cordovaPluginLog,
   
       stopScan: function() {
           return new Promise(function(resolve, reject) {
@@ -331,7 +332,7 @@
   
       upgradeFirmware: function(device_id, url) {
           return new Promise(function(resolve, reject) {
-              module.exports.write(device_id, url, resolve, reject);
+              module.exports.upgradeFirmware(device_id, url, resolve, reject);
           });
       }
   };
