@@ -327,8 +327,8 @@
   
       upgradeFirmware: function(device_id, url) {
           return new Promise(function(resolve, reject) {
-              module.exports.write(device_id, url, resolve, reject);
-          });
+            module.exports.upgradeFirmware(device_id, url, resolve, reject);
+        });
       }
   };
   
